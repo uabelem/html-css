@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu
+        navegador.
+    </p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/pequeno.png" type="image/png">
+        <!-- A menor DEVE estar por cima da imagem média no seu código -->
+        <source media="(max-width: 1050px)" srcset="imagens/medio.png" type="image/png">
+        <!-- A média DEVE estar por cima da imagem original no seu código -->
+        <img src="imagens/grande.png"
+            alt="Imagem flexível"><!-- A imagem original DEVE estar por baixo de todas as sources no seu código -->
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML5!</p>
+    <audio controls>
+        <source src="mídia/craciousey-cedered-cappuccino-454485.mp3" type="audio/mpeg">
+        Seu navegador não suporta a reprodução de áudio.
+    </audio>
+</body>
+
+</html>

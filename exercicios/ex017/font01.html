@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: 'Work Sans', system-ui, Verdana, Geneva, Tahoma, sans-serif, Arial, Helvetica, sans-serif;
+            /*
+             Medidas absolutas
+            cm, mm, in, px, pt, pc >>Uso recomendado do px<<
+
+             Medidas relativas
+            em, ex, ch, rem, vw, vh, % >>Uso recomendado do em<<
+
+            16px geralmente = 1em
+             1em geralmente = 16px
+            */
+            font-size: 16px; 
+            font-weight: 400;
+
+            /* 
+            weight = Grossura: 100 a 900 (lighter, normal, bold, bolder)
+            width = Largura
+            height = Altura
+            */
+        }
+
+        h1,h2 {
+            /*
+            font-size: 16px; 
+            font-weight: 400;
+            font-style: italic;
+            text-decoration: underline;
+            RESUMA TUDO EM UMA LINHA NA ORDEM:
+            style -> weight -> size -> family
+            */
+            font: italic 400 32px serif
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam est unde sapiente quis laudantium, reprehenderit ad explicabo eius corrupti veniam quo, aliquam ex eaque molestiae quasi nisi dolore, sint impedit?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt adipisci, saepe est, deserunt aliquid ipsum id porro qui eaque ea, suscipit sit sequi nesciunt voluptatum maiores voluptatibus repellendus accusamus temporibus.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam, voluptatum.</p>
+</body>
+</html>
