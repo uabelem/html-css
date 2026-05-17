@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            /* Alterado de width para max-width e adicionado padding lateral */
+            width: 100%;
+            text-align: center;
+            padding: 0 10px;
+            /* Evita que o conteúdo cole nas bordas em telas menores */
+            box-sizing: border-box;
+        }
+
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: auto;
+            position: relative;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+            /* Opcional: define uma largura mínima para as colunas não esmagarem */
+            min-width: 50px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #c8c8c8;
+        }
+
+        h2 {
+            font-size: 1.2em;
+            background-color: #f2f2f2;
+            padding: 10px;
+            border: 1px solid black;
+            border-bottom: 0;
+            margin:auto;
+            width: 100%;
+        }
+
+        div#container {
+            overflow-x: auto;
+            width: 100%;
+            /* Garante que o container ocupe o espaço disponível */
+        }
+        th:first-child, td:first-child { /*significa o primeirono filho de th ou td, ou seja, a primeira coluna*/
+            position: sticky;
+            left: 0;
+            background-color: #f2f2f2;
+            /* Garante que o cabeçalho da primeira coluna fique visível ao rolar horizontalmente */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tabelas em telas pequenas</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore vel corrupti pariatur minima maxime quidem eius
+        voluptate alias dolor inventore laudantium saepe, vitae quisquam repellendus ipsam sunt consectetur dicta
+        voluptas?</p>
+        
+        <h2>Tabela responsiva</h2>
+    <div id="container">
+        <table>
+            
+            <thead>
+                <tr>
+                    <th>Produtos</th>
+                    <th>Jan</th>
+                    <th>Fev</th>
+                    <th>Mar</th>
+                    <th>Abr</th>
+                    <th>Mai</th>
+                    <th>Jun</th>
+                    <th>Jul</th>
+                    <th>Ago</th>
+                    <th>Sep</th>
+                    <th>Out</th>
+                    <th>Nov</th>
+                    <th>Dez</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Produto A</td>
+                    <td>100</td>
+                    <td>120</td>
+                    <td>130</td>
+                    <td>110</td>
+                    <td>150</td>
+                    <td>140</td>
+                    <td>160</td>
+                    <td>170</td>
+                    <td>180</td>
+                    <td>190</td>
+                    <td>200</td>
+                    <td>210</td>
+                </tr>
+                <tr>
+                    <td>Produto B</td>
+                    <td>80</td>
+                    <td>90</td>
+                    <td>100</td>
+                    <td>95</td>
+                    <td>110</td>
+                    <td>105</td>
+                    <td>115</td>
+                    <td>120</td>
+                    <td>125</td>
+                    <td>130</td>
+                    <td>135</td>
+                    <td>140</td>
+                </tr>
+                <tr>
+                    <td>Produto C</td>
+                    <td>60</td>
+                    <td>70</td>
+                    <td>80</td>
+                    <td>75</td>
+                    <td>90</td>
+                    <td>85</td>
+                    <td>95</td>
+                    <td>100</td>
+                    <td>105</td>
+                    <td>110</td>
+                    <td>115</td>
+                    <td>120</td>
+                </tr>
+                <tr>
+                    <td>Produto D</td>
+                    <td>40</td>
+                    <td>50</td>
+                    <td>60</td>
+                    <td>55</td>
+                    <td>70</td>
+                    <td>65</td>
+                    <td>75</td>
+                    <td>80</td>
+                    <td>85</td>
+                    <td>90</td>
+                    <td>95</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>Produto E</td>
+                    <td>20</td>
+                    <td>30</td>
+                    <td>40</td>
+                    <td>35</td>
+                    <td>50</td>
+                    <td>45</td>
+                    <td>55</td>
+                    <td>60</td>
+                    <td>65</td>
+                    <td>70</td>
+                    <td>75</td>
+                    <td>80</td>
+                </tr>
+                <tr>
+                    <td>Produto F</td>
+                    <td>10</td>
+                    <td>20</td>
+                    <td>30</td>
+                    <td>25</td>
+                    <td>40</td>
+                    <td>35</td>
+                    <td>45</td>
+                    <td>50</td>
+                    <td>55</td>
+                    <td>60</td>
+                    <td>65</td>
+                    <td>70</td>
+                </tr>
+                <tr>
+                    <td>Produto G</td>
+                    <td>3</td>
+                    <td>7</td>
+                    <td>10</td>
+                    <td>15</td>
+                    <td>20</td>
+                    <td>25</td>
+                    <td>30</td>
+                    <td>32</td>
+                    <td>35</td>
+                    <td>40</td>
+                    <td>45</td>
+                    <td>50</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
