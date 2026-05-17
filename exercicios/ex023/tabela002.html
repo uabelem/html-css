@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 500px;
+            position: relative;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding:10px;
+            background-color: #e2e2e2;
+        }
+        td,th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead>tr>th{
+            position: sticky;
+            top: -1px;
+            background-color: #a7a7a7;
+        }
+        thead,
+        tfoot {
+            background-color: #a7a7a7;
+        }
+        td.num {
+            text-align: right;
+        }
+        td.ordem {
+            text-align: center;
+            background-color: #d0d0d0;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: #e4e4e4;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tabelas grandes</h1>
+<table>
+    <caption>População dos Estados Brasileiros</caption>
+    <thead>
+        <tr>
+            <th scope="col" style="width: 30px;">Ranking</th>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 90px;">População</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td scope="row" class="ordem">1</td>
+            <td>São Paulo</td>
+            <td class="num">44 420 459</td>
+        </tr>
+        <tr>
+            <td scope="row" class="ordem">2</td>
+            <td>Minas Gerais</td>
+            <td class="num">20 538 718</td>
+        </tr>
+        <tr>
+            <td scope="row" class="ordem">3</td>
+            <td>Rio de Janeiro</td>
+            <td class="num">16 054 711</td>
+        </tr>
+        <tr>
+            <td scope="row" class="ordem">4</td>
+            <td>Bahia</td>
+            <td class="num">14 136 417</td>
+        </tr>
+        <tr>
+            <td scope="row" class="ordem">5</td>
+            <td>Paraná</td>
+            <td class="num">11 443 208</td>
+        </tr>
+        <tr>
+            <td scope="row" class="ordem">6</td>
+            <td>Rio Grande do Sul</td>
+            <td class="num">10 880 506</td>
+        </tr>
+        <tr>
+            <td scope="row" class="ordem">7</td>
+            <td>Pernambuco</td>
+            <td class="num">9 058 150</td>
+        </tr>
+        <tr>
+            <td scope="row" class="ordem">8</td>
+            <td>Ceará</td>
+            <td class="num">8 791 688</td>
+        </tr>
+        <tr>
+            <td scope="row" class="ordem">9</td>
+            <td>Pará</td>
+            <td class="num">8 116 132</td>
+        </tr>
+        <tr>
+            <td scope="row" class="ordem">10</td>
+            <td>Santa Catarina</td>
+            <td class="num">7 609 601</td>
+        </tr>
+        <tr>
+            <td scope="row" class="ordem">11</td>
+            <td>Goiás</td>
+            <td class="num">7 055 228</td>
+        </tr>
+        <tr>
+            <td scope="row" class="ordem">12</td>
+            <td>Maranhão</td>
+            <td class="num">6 775 152</td>
+        </tr>
+        <tr>
+            <td scope="row" class="ordem">13</td>
+            <td>Paraíba</td>
+            <td class="num">3 974 495</td>
+        </tr>
+        <tr>
+            <td scope="row" class="ordem">14</td>
+            <td>Amazonas</td>
+            <td class="num">3 941 175</td>
+        </tr>
+        <tr>
+            <td scope="row" class="ordem">15</td>
+            <td>Espírito Santo</td>
+            <td class="num">3 833 486</td>
+        </tr>
+        <tr>
+            <td scope="row" class="ordem">16</td>
+            <td>Mato Grosso</td>
+            <td class="num">3 658 814</td>
+        </tr>
+        <tr>
+            <td scope="row" class="ordem">17</td>
+            <td>Rio Grande do Norte</td>
+            <td class="num">3 302 406</td>
+        </tr>
+        <tr>
+            <td scope="row" class="ordem">18</td>
+            <td>Piauí</td>
+            <td class="num">3 269 200</td>
+        </tr>
+        <tr>
+            <td scope="row" class="ordem">19</td>
+            <td>Alagoas</td>
+            <td class="num">3 127 511</td>
+        </tr>
+        <tr>
+            <td scope="row" class="ordem">20</td>
+            <td>Distrito Federal</td>
+            <td class="num">2 817 068</td>
+        </tr>
+        <tr>
+            <td scope="row" class="ordem">21</td>
+            <td>Mato Grosso do Sul</td>
+            <td class="num">2 756 700</td>
+        </tr>
+        <tr>
+            <td scope="row" class="ordem">22</td>
+            <td>Sergipe</td>
+            <td class="num">2 209 558</td>
+        </tr>
+        <tr>
+            <td scope="row" class="ordem">23</td>
+            <td>Rondônia</td>
+            <td class="num">1 581 016</td>
+        </tr>
+        <tr>
+            <td scope="row" class="ordem">24</td>
+            <td>Tocantins</td>
+            <td class="num">1 511 459</td>
+        </tr>
+        <tr>
+            <td scope="row" class="ordem">25</td>
+            <td>Acre</td>
+            <td class="num">830 026</td>
+        </tr>
+        <tr>
+            <td scope="row" class="ordem">26</td>
+            <td>Amapá</td>
+            <td class="num">733 508</td>
+        </tr>
+        <tr>
+            <td scope="row" class="ordem">27</td>
+            <td>Roraima</td>
+            <td class="num">636 303</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th></th>
+            <th scope="row">Total de Habitantes</th>
+            <td class="num"><strong>203 062 512</strong></td>
+        </tr>
+    </tfoot>
+</table>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae ad quas repellendus culpa natus nobis in perferendis recusandae quam. Expedita placeat voluptatibus, dignissimos dicta inventore fugiat laborum voluptatem totam recusandae!
+Nemo, omnis corporis! Explicabo odit quae, labore reprehenderit aut repellat minus, doloribus velit corrupti maiores quibusdam asperiores amet in ut inventore veniam officiis, saepe veritatis distinctio porro assumenda dolorem fugiat?
+Cumque harum cum error suscipit fugiat perspiciatis accusantium ipsa, totam consectetur quo rerum et, dolores eligendi voluptate rem nulla fugit tenetur, est obcaecati ratione sit assumenda quis quaerat. Ipsum, earum.
+Maiores ab repellat quos, doloremque distinctio iusto odio! Vitae aperiam nobis dolore veritatis laboriosam commodi possimus eligendi, in, dignissimos illo quo, dolor ducimus odio corporis. Cumque natus consectetur eligendi numquam.</p>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae ad quas repellendus culpa natus nobis in perferendis recusandae quam. Expedita placeat voluptatibus, dignissimos dicta inventore fugiat laborum voluptatem totam recusandae!
+Nemo, omnis corporis! Explicabo odit quae, labore reprehenderit aut repellat minus, doloribus velit corrupti maiores quibusdam asperiores amet in ut inventore veniam officiis, saepe veritatis distinctio porro assumenda dolorem fugiat?
+Cumque harum cum error suscipit fugiat perspiciatis accusantium ipsa, totam consectetur quo rerum et, dolores eligendi voluptate rem nulla fugit tenetur, est obcaecati ratione sit assumenda quis quaerat. Ipsum, earum.
+Maiores ab repellat quos, doloremque distinctio iusto odio! Vitae aperiam nobis dolore veritatis laboriosam commodi possimus eligendi, in, dignissimos illo quo, dolor ducimus odio corporis. Cumque natus consectetur eligendi numquam.</p>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae ad quas repellendus culpa natus nobis in perferendis recusandae quam. Expedita placeat voluptatibus, dignissimos dicta inventore fugiat laborum voluptatem totam recusandae!
+Nemo, omnis corporis! Explicabo odit quae, labore reprehenderit aut repellat minus, doloribus velit corrupti maiores quibusdam asperiores amet in ut inventore veniam officiis, saepe veritatis distinctio porro assumenda dolorem fugiat?
+Cumque harum cum error suscipit fugiat perspiciatis accusantium ipsa, totam consectetur quo rerum et, dolores eligendi voluptate rem nulla fugit tenetur, est obcaecati ratione sit assumenda quis quaerat. Ipsum, earum.
+Maiores ab repellat quos, doloremque distinctio iusto odio! Vitae aperiam nobis dolore veritatis laboriosam commodi possimus eligendi, in, dignissimos illo quo, dolor ducimus odio corporis. Cumque natus consectetur eligendi numquam.</p>
+</body>
+
+</html>
