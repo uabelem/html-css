@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Outros inputs</h1>
+    <form action="cadrastro.js" autocomplete="on" method="post">
+        <p>
+            <label for="cor">Cor:</label> <input type="color" name="cor" id="cor" required value="#0000ff">
+        </p>
+        <p>
+            <label for="nivel">Nivel:</label>
+            <input type="range" name="nivel" id="nivel" required min="1" max="10" value="5">
+        </p>
+        <p>
+            <label for="file">Foto de Perfil:</label>
+            <input type="file" name="file" id="file" required>
+        </p>
+    </form>
+</body>
+</html>
