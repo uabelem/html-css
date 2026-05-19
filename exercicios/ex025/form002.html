@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <h1>Meu segundo formulário</h1>
+    <form action="cadrastro.js" autocomplete="on" method="post">
+        <p>
+            <label for="usuario">Usúario:</label> 
+            <input autocomplete="username" type="text" name="usuario" id="usuario" required minlength="5" maxlength="15" placeholder="Nome de Usúario" size="15">
+        </p>
+        <p>
+            <label for="senha">Senha:</label> 
+            <input autocomplete="new-password" type="password" name="senha" id="senha" required minlength="8" placeholder="Senha" size="8">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset">
+        </p>
+    </form>
+</body>
+
+</html>
