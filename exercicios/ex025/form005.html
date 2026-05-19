@@ -9,22 +9,25 @@
 
 <body>
     <h1>Teste de dados pessoais</h1>
-    <form action="cadrastro.js" autocomplete="on" method="post">
+    <form action="cadrastro.js" autocomplete="on" method="get">
         <fieldset>
-            <legend>Dados Pessoais</legend>
+            <legend>Função</legend>
             <p>
-                <label for="nome">Nome:</label>
-                <input autocomplete="name" type="text" name="nome" id="nome" required minlength="5" maxlength="30" placeholder="Nome completo" size="30">
+                <input type="radio" name="funcao" id="aluno" required>
+                <label for="aluno">Aluno</label>
+                
+                <input type="radio" name="funcao" id="prof" required>
+                <label for="prof">Professor</label>
             </p>
-            <p>
-                <label for="email">E-mail::</label>
-                <input autocomplete="email" type="email" name="email" id="email" required minlength="8" placeholder="E-mail" size="30">
-            </p>
-            <p>
-                <label for="tel">Telefone:</label>
-                <input type="tel" name="tel" id="tel" autocomplete="tel" required placeholder="(xx)xxxxx-xxxx" pattern="^\(\d{2}\)\d{4,5}-\d{4}$">
-            </p>
-            <!-- Estudar mais sobre RegEx -> pattern -->
+        </fieldset>
+        <fieldset id="fp">
+            <legend>Função Pedágogica</legend>
+            <input type="checkbox" name="dir" id="dir"><label for="dir">Diretor(a)</label><br>
+            <input type="checkbox" name="vice" id="vice"><label for="vice">Vice Diretor(a)</label><br>
+            <input type="checkbox" name="sec" id="sec"><label for="sec">Secretário(a)</label><br>
+            <input type="checkbox" name="prof" id="prof"><label for="prof">Professor</label><br>
+            <input type="checkbox" name="profa" id="profa"><label for="profa">Professor(a) Ed. Esp.</label><br>
+            <input type="checkbox" name="func" id="func"><label for="func">Funcionário</label>
         </fieldset>
         <p>
             <input type="submit" value="Enviar">
