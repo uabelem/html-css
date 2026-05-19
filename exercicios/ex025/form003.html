@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste formulário</h1>
+    <form action="cadrastro.js" autocomplete="on" method="get">
+        <p>
+            <label for="nome">Nome:</label> <input type="text" name="nome" id="nome" placeholder="Nome completo" required maxlength="30" size="30" autocomplete="name">
+        </p>
+        <p>
+            <label for="media">Média:</label>
+            <input type="number" name="media" id="media" step="0.1" placeholder="0 á 10" min="0" max="10" required size="2">
+        </p>
+        <p>
+            <label for="periodo">Período Letivo:</label>
+            <input type="month" name="periodo" id="periodo" required value="2026-05">
+        </p>
+        <p>
+            <label for="data">Dia da Prova:</label>
+            <input type="date" name="data" id="data" required value="2026-05-19">
+        </p>
+        <p>
+            <label for="hora">Hora da Prova:</label>
+            <input type="time" name="hora" id="hora" required>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
