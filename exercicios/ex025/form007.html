@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Seletores em Forms</title>
+</head>
+<body>
+    <h1>Teste de Seletores em Forms</h1>
+    <form action="cadrastro.js">
+        <fieldset>
+            <legend>Qual sua matéria favorita?</legend>
+            <select name="" id="">
+                <optgroup label="Regulares">
+                    <option value="">Matemática</option>
+                    <option value="">Português</option>
+                    <option value="">História</option>
+                    <option value="">Geografia</option>
+                    <option value="">Química</option>
+                    <option value="">Física</option>
+                    <option value="">Sociologia</option>
+                    <option value="">Fílosofia</option>
+                    <option value="">Inglês</option>
+                </optgroup>
+                <optgroup label="Curso Técnico de TI">
+                    <option value="">POO Java</option>
+                    <option value="">HTML5</option>
+                    <option value="">Logíca da programação</option>
+                    <option value="">Robôtica</option>
+                    <option value="">Manutenção de computadores</option>
+                    <option value="">Gestão de tempo</option>
+                </optgroup>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Qual seu professor(a) favorito(a)?</legend>
+            <label for="prof">Escolha:</label>
+            <input type="text" name="prof" id="prof" list="profs" placeholder="Digite se necessário">
+            <datalist id="profs">
+                <option value="Anna"></option>
+                <option value="Zé"></option>
+                <option value="Sergio"></option>
+                <option value="Raimunda"></option>
+                <option value="Mônica"></option>
+            </datalist>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
