@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Teste de Seletores em Forms</h1>
-    <form action="cadrastro.js">
+    <form action="cadrastro.js" method="post">
         <fieldset>
             <legend>Qual sua matéria favorita?</legend>
             <select name="" id="">
@@ -21,6 +21,7 @@
                     <option value="">Sociologia</option>
                     <option value="">Fílosofia</option>
                     <option value="">Inglês</option>
+                    <option value="">Artes</option>
                 </optgroup>
                 <optgroup label="Curso Técnico de TI">
                     <option value="">POO Java</option>
@@ -34,15 +35,21 @@
         </fieldset>
         <fieldset>
             <legend>Qual seu professor(a) favorito(a)?</legend>
-            <label for="prof">Escolha:</label>
-            <input type="text" name="prof" id="prof" list="profs" placeholder="Digite se necessário">
-            <datalist id="profs">
-                <option value="Anna"></option>
-                <option value="Zé"></option>
-                <option value="Sergio"></option>
-                <option value="Raimunda"></option>
-                <option value="Mônica"></option>
-            </datalist>
+            <p>
+                <label for="prof">Escolha:</label>
+                <input type="text" name="prof" id="prof" list="profs" placeholder="Digite se necessário">
+                <datalist id="profs">
+                    <option value="Anna"></option>
+                    <option value="Zé"></option>
+                    <option value="Sergio"></option>
+                    <option value="Raimunda"></option>
+                    <option value="Mônica"></option>
+                </datalist>
+            </p>
+            <p>
+                <label for="text">Explique porque:</label>
+                <textarea name="text" id="text" cols="30" rows="1" placeholder="Sua explicação aqui..."></textarea>
+            </p>
         </fieldset>
         <p>
             <input type="submit" value="Enviar">
