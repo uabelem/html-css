@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/*Estilos para impressão*/
+
+*{
+    margin: 0 ;
+    padding: 0;
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.3em;
+    text-indent: 20px;
+}
+
+h1{
+    font-size: 2em;
+    margin: 1.5em;
+    text-align: center;
+}
+
+h2{
+    margin-bottom: 0.8em;
+}
+
+/* Somem quando a página for imprimida */
+menu,a{
+    display: none;
+}
+
+section>p{
+    padding-bottom: 2em;
+    text-align: justify;
+}
+
+article{
+    margin: 2em;
+}
+
+article::after{
+    content: 'Essa impressão foi feita desta forma graças a Gabriel Belém Lima';
+    font-weight: bold;
+}
