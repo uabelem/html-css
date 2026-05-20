@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outputs</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadrastro.js" method="post" autocomplete="on">
+        <p>
+            <label for="num1">Volume</label>
+            <input type="range" name="num1" id="num1" required oninput="vol.innerHTML = Number(num1.value)" value="50">
+            <output name="vol" id="vol">50</output>%
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

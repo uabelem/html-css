@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outputs</title>
+</head>
+<body>
+    <h1>Em que ano você nasceu?</h1>
+    <form action="cadrastro.js" method="post" autocomplete="on">
+        <p>
+            <label for="ano">Em que ano você nasceu?</label>
+            <input type="number" name="ano" id="ano" min="1900" max="2024" required oninput="calcIdade()">
+        </p>
+        <p>
+            <label for="age">Sua idade é</label>
+            <output name="age" id="age"></output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    <!--Script para calcular a idade de acordo o ano atual-->
+    <script>
+        function calcIdade(){
+            let atual = new Date().getFullYear()
+            age.innerHTML = Number(atual) - Number(ano.value)
+        }
+    </script>
+</body>
+</html>
