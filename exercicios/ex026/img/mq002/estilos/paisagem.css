@@ -1,3 +1,8 @@
 @charset "UTF-8";
 
 /* Configurações de TELA DEITADA ( modo paisagem )*/
+
+body{
+    background-image:url(../img/cev-landscape.jpg);
+    background-position: left bottom;
+}
