@@ -31,7 +31,7 @@ span#burguer{
 
 span#burguer:hover{
     background-color: rgb(0, 0, 111);
-    color: blue;
+    color: whitesmoke;
 }
 
 menu{
@@ -68,6 +68,7 @@ main{
 
 article>h2{
     padding-bottom: 20px;
+    text-align: center;
 }
 
 article>p{
