@@ -35,7 +35,7 @@
 | **ex023** | [tabela001.html](./exercicios/ex023/tabela001.html) · [tabela002.html](./exercicios/ex023/tabela002.html) · [tabela003.html](./exercicios/ex023/tabela003.html) · [tabela004.html](./exercicios/ex023/tabela004.html) · [tabela005.html](./exercicios/ex023/tabela005.html) · [tabela006.html](./exercicios/ex023/tabela006.html) |
 | **ex024** | [iframe001.html](./exercicios/ex024/iframe001.html) · [iframe002.html](./exercicios/ex024/iframe002.html) · [iframe003.html](./exercicios/ex024/iframe003.html) |
 | **ex025** | [form001.html](./exercicios/ex025/form001.html) · [form002.html](./exercicios/ex025/form002.html) · [form003.html](./exercicios/ex025/form003.html) · [form004.html](./exercicios/ex025/form004.html) · [form005.html](./exercicios/ex025/form005.html) · [form006.html](./exercicios/ex025/form006.html) · [form007.html](./exercicios/ex025/form007.html) · [form008.html](./exercicios/ex025/form008.html) · [form009.html](./exercicios/ex025/form009.html) · [form010.html](./exercicios/ex025/form010.html) |
-| **ex026** *(media queries)* | [mq001](./exercicios/ex026/mq001/index.html) · [mq002](./exercicios/ex026/mq002/index.html) · [mq003](./exercicios/ex026/mq003/index.html) . [mq004](./exercicios/ex026/mq004/index.html) |
+| **ex026** *(media queries)* | [mq001](./exercicios/ex026/mq001/index.html) · [mq002](./exercicios/ex026/mq002/index.html) · [mq003](./exercicios/ex026/mq003/index.html) . [mq004](./exercicios/ex026/mq004/index.html) . [mq005](./exercicios/ex026/mq005/index.html) |
 
 ---
 
