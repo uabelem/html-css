@@ -9,3 +9,24 @@ Desktop: de 992px ate 1200px
 Grandes telas: acima de 1200px
 ------------------------------*/
 
+@media screen and (min-width: 768px) {
+    span#burguer{
+        display: none;
+    }
+    menu{
+        display: block;
+        text-align: center;
+        background-color: darkblue;
+    }
+    menu>ul>li{
+        display: inline-block;
+    }
+    menu>ul>li>a{
+        background-color: darkblue;
+        border: none;
+        width: 100px;
+    }
+    main{
+        max-width: 768px;
+    }
+}

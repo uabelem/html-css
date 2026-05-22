@@ -10,7 +10,7 @@
     <title>Media Query</title>
 </head>
 
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Tecnologia</h1>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
@@ -52,6 +52,18 @@
         </article>
     </main>
     <script>
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+                burguer.innerHTML = 'menu'
+            } else {
+                itens.style.display = 'none'
+                burguer.innerHTML = 'menu'
+
+            }
+        }
+
         // "==" significa IGUAL / "=" significa RECEBE
         function clickMenu() {
             // se o display de "itens" for block ao click, fica none, se não, volta para block
