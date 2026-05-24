@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner{
+            background-color: #106793;
+
+            display: flex;
+        }
+        div.item{
+            background-color: #add8e6;
+            border: 1px solid #1886ae;
+            text-align: center;
+            padding: 20px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Order:</h1>
+    <div class="conteiner">
+        <!-- O "order" oarganiza os itens em ordem crescente de acordo seu valor-->
+        <div class="item" style="order: 0;">B</div>
+        <div class="item" style="order: 23;">L</div>
+        <div class="item" style="order: 9;">I</div>
+        <div class="item" style="order: 12;">E</div>
+        <div class="item" style="order: -7;">G</div>
+        <div class="item" style="order: -3;">A</div>
+        <div class="item" style="order: 2;">R</div>
+        <!-- Utilizando o "order" BLEIEGAR pode virar GABRIEL-->
+    </div>
+</body>
+</html>
