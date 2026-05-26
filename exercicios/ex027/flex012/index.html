@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        body{
+            background-color: #2b2b2b;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div.conteiner{
+            background-color: #a2a2a2;
+            margin: 10px;
+            padding: 5px;
+            border-radius: 10px;
+            height: 100px;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        div.item{
+            background-color: #4a4a4a;
+            border-radius: 10px;
+            margin: 5px;
+        }
+
+        .item#a{
+            flex: 1 4 80px; /* FLEX é uma short-hand */
+        }
+
+        .item#b{
+            flex: 2 2 80px; /* flex-grow | flex-shrink | flex-basis */ 
+        }
+
+        .item#c{
+            flex: 4 1 80px; /* flex-grow: 4 | flex-shrink: 1 | flex-basis: 80px */
+        }
+    </style> 
+</head>
+<body>
+    <div>
+        <div class="conteiner">
+            <div class="item" id="a"></div>
+            <div class="item" id="b"></div>
+            <div class="item" id="c"></div>
+        </div>
+        <div class="conteiner">
+            <div class="item" id="c"></div>
+            <div class="item" id="b"></div>
+            <div class="item" id="b"></div>
+        </div>
+        <div class="conteiner">
+            <div class="item" id="b"></div>
+            <div class="item" id="c"></div>
+            <div class="item" id="a"></div>
+        </div>
+        <div class="conteiner">
+            <div class="item" id="a"></div>
+            <div class="item" id="a"></div>
+            <div class="item" id="b"></div>
+        </div>
+        <div class="conteiner">
+            <div class="item" id="c"></div>
+            <div class="item" id="c"></div>
+            <div class="item" id="a"></div>
+        </div>
+        <div class="conteiner">
+            <div class="item" id="a"></div>
+            <div class="item" id="b"></div>
+            <div class="item" id="c"></div>
+        </div>
+    </div>
+</body>
+</html>
