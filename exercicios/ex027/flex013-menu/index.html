@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-    <title>PROJETO MENU</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <link rel="shortcut icon" href="flex.ico" type="image/x-icon">
+    <title>FlexBox ná prática</title>
 </head>
 
 <body onresize="mudouTamanho()">
@@ -16,42 +17,217 @@
             <span class="material-symbols-outlined" onclick="verMenu()" id="menu">menu</span>
             <nav id="navmenu">
                 <ul>
-                    <li>Justify Contant</li>
-                    <li>Justify Items</li>
-                    <li>Align Items</li>
-                    <li>Flex Flow</li>
-                    <li>Flex</li>
+                    <li onclick="sBasic(); setActive(this)">Basic</li>
+                    <li onclick="sJustifycont(); setActive(this)">Justify Contant</li>
+                    <li onclick="sJustifyitems(); setActive(this)">Justify Items</li>
+                    <li onclick="sAlignitems(); setActive(this)">Align Items</li>
+                    <li onclick="sFlexflow(); setActive(this)">Flex Flow</li>
+                    <li onclick="sFlex(); setActive(this)">Flex</li>
                 </ul>
             </nav>
         </div>
+        <div class="creditos"><span>By <a href="https://intagram.com/@uabelem">Gabriel Belém Lima</a></span></div>
     </header>
     <main>
-        <h2>Conceitos básicos de flexbox</h2>
-        <p>O <em>Flexible Box Module</em>, geralmente chamado de flexbox, foi projetado tanto como um modelo de layout
-            unidimensional quanto como um método capaz de organizar espacialmente os elementos em uma interface, além de
-            possuir capacidades avançadas de alinhamento. Este artigo fornece um resumo das principais funcionalidades
-            do flexbox, as quais exploraremos com mais detalhes no restante deste guia.
-        </p>
+        <section id="basic">
+            <h2>Conceitos básicos de flexbox</h2>
+            <p>O <em>Flexible Box Module</em>, geralmente chamado de flexbox, foi projetado tanto como um modelo de
+                layout unidimensional quanto como um método capaz de organizar espacialmente os elementos em uma
+                interface, além de possuir capacidades avançadas de alinhamento. Este artigo fornece um resumo das
+                principais funcionalidades do flexbox, as quais exploraremos com mais detalhes no restante deste guia.
+            </p>
+            <p>
+                Quando se descreve o flexbox como sendo unidimensional, enfatiza-se o fato de que ele lida com o layout
+                em uma dimensão de cada vez - seja uma linha ou uma coluna. Isto pode ser comparado com o modelo
+                bidimensional de <span>CSS - Layout de Grade</span>, que permite o controle simultâneo das colunas e
+                linhas.
+            </p>
+            <h2>Os eixos do <em>flexbox</em></h2>
+            <p>Conforme descrito acima, a propriedade <mark>flex-direction</mark> define a direção do eixo principal e
+                pode tem quatro valores possíveis:</p>
+            <ul>
+                <li><mark>row</mark></li>
+                <li><mark>row-reverse</mark></li>
+                <li><mark>column</mark></li>
+                <li><mark>column-reverse</mark></li>
+            </ul>
+            <p>Se o valor escolhido for <mark>row</mark> (linha) ou <mark>row-reverse</mark> (linha reversa), seu eixo
+                principal se moverá ao longo da linha — na direção inline.</p>
+            <p id="font">Informaçôes tiradas do site <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Flexible_box_layout/Basic_concepts"
+                    target="_blank">Developer Mozilla</a>
+            </p>
+        </section>
 
-        <p>
-            Quando se descreve o flexbox como sendo unidimensional, enfatiza-se o fato de que ele lida com o layout em
-            uma dimensão de cada vez - seja uma linha ou uma coluna. Isto pode ser comparado com o modelo bidimensional
-            de <span>CSS - Layout de Grade</span>, que permite o controle simultâneo das colunas e linhas.
-        </p>
-        <h2>Os eixos do <em>flexbox</em></h2>
-        <p>Conforme descrito acima, a propriedade <mark>flex-direction</mark> define a direção do eixo principal e pode
-            tem quatro valores possíveis:</p>
-        <ul>
-            <li><mark>row</mark></li>
-            <li><mark>row-reverse</mark></li>
-            <li><mark>column</mark></li>
-            <li><mark>column-reverse</mark></li>
-        </ul>
-        <p>Se o valor escolhido for <mark>row</mark> (linha) ou <mark>row-reverse</mark> (linha reversa), seu eixo
-            principal se moverá ao longo da linha — na direção inline.</p>
-        <p id="font">Informaçôes tiradas do site <a
-                href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Flexible_box_layout/Basic_concepts" target="_blank">Developer Mozilla</a>
-        </p>
+        <section id="justifycont">
+            <h2>Justify Content</h2>
+            <p>O The <mark>justify-content</mark> propriedade é usada para alinhar os itens do eixo principal, direção
+                em que <mark>flex-direction</mark> tem definido o fluxo. O valor inicial é <mark>flex-start</mark> que
+                alinhará os itens na borda inicial do container, mas você também pode definir o valor para
+                <mark>flex-end</mark> para alinhá-los no final, ou <mark>center</mark> para alinhá-los no centro.
+            </p>
+            <br>
+            <p>Você também pode usar o valor <mark>space-between</mark> para ter todo o espaço livre depois que os
+                itens foram dispostos, e compartilhá-lo uniformemente entre os itens para que haja uma quantidade igual
+                de espaço entre cada item. Para causar uma quantidade igual de espaço à direita e à esquerda (ou
+                superior e inferior para colunas) de cada item use o valor <mark>space-around</mark>. Com
+                <mark>space-around</mark>, os itens têm um espaço de meio tamanho em cada extremidade. Ou, para fazer
+                com que os itens tenham espaço igual ao seu redor, use o valor <mark>space-evenly</mark>. Com
+                <mark>space-evenly</mark>, os itens têm um espaço em tamanho real em qualquer extremidade.
+            </p>
+            <br>
+            <p>Experimente os seguintes valores de justify-content:</p>
+            <ul>
+                <li><mark>start</mark></li>
+                <li><mark>end</mark></li>
+                <li><mark>left</mark></li>
+                <li><mark>right</mark></li>
+                <li><mark>normal</mark></li>
+                <li><mark>flex-start</mark></li>
+                <li><mark>flex-end</mark></li>
+                <li><mark>center</mark></li>
+                <li><mark>space-around</mark></li>
+                <li><mark>space-between</mark></li>
+                <li><mark>space-evenly</mark></li>
+                <li><mark>stretch</mark></li>
+            </ul>
+            <p>O artigo <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Flexible_box_layout/Aligning_items"
+                    target="_blank">Alinhando itens em um recipiente flex</a> explora mais a fundo essas propriedades,
+                a fim de ter uma melhor compreensão de como funcionam. Esses exemplos básicos, no entanto, são úteis na
+                maioria dos casos de uso.</p>
+            <p id="font">Informaçôes tiradas do site <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Flexible_box_layout/Basic_concepts"
+                    target="_blank">Developer Mozilla</a>
+            </p>
+        </section>
+
+        <section id="justifyitems">
+            <h2>Justify Items</h2>
+            <p>A propriedade <mark>justify-items</mark> define o valor padrão de <mark>justify-self</mark> para todos
+                os itens dentro de um container, alinhando-os ao longo do eixo inline (horizontal) do container. No
+                contexto do flexbox, essa propriedade não tem efeito direto para flexbox, utilize
+                <mark>justify-content</mark> para alinhar os itens no eixo principal.
+            </p>
+            <br>
+            <p>No entanto, em outros contextos de layout como Grid, <mark>justify-items</mark> é bastante útil.
+                Os valores possíveis incluem:</p>
+            <ul>
+                <li><mark>auto</mark></li>
+                <li><mark>normal</mark></li>
+                <li><mark>start</mark></li>
+                <li><mark>end</mark></li>
+                <li><mark>center</mark></li>
+                <li><mark>stretch</mark></li>
+                <li><mark>flex-start</mark></li>
+                <li><mark>flex-end</mark></li>
+                <li><mark>self-start</mark></li>
+                <li><mark>self-end</mark></li>
+                <li><mark>left</mark></li>
+                <li><mark>right</mark></li>
+            </ul>
+            <p>Para controlar o alinhamento de um único item dentro do container flex, utilize a propriedade
+                <mark>align-self</mark> diretamente no item desejado.
+            </p>
+            <p id="font">Informaçôes tiradas do site <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-items" target="_blank">Developer
+                    Mozilla</a>
+            </p>
+        </section>
+
+        <section id="alignitems">
+            <h2>Align Items</h2>
+            <p>A propriedade <mark>align-items</mark> define o comportamento padrão de como os itens flex são dispostos
+                ao longo do <em>eixo transversal</em> (cross axis) da linha atual. Pense nisso como a versão do
+                <mark>justify-content</mark> para o eixo transversal perpendicular ao eixo principal.
+            </p>
+            <br>
+            <p>O valor inicial de <mark>align-items</mark> é <mark>stretch</mark>, que fará com que os itens se
+                estiquem até a altura do item mais alto da linha. Você pode alterá-lo para <mark>flex-start</mark> para
+                que os itens se alinhem ao início do container, <mark>flex-end</mark> para alinhá-los ao final, ou
+                <mark>center</mark> para centralizá-los.
+            </p>
+            <br>
+            <p>Experimente os seguintes valores de align-items:</p>
+            <ul>
+                <li><mark>stretch</mark></li>
+                <li><mark>flex-start</mark></li>
+                <li><mark>flex-end</mark></li>
+                <li><mark>center</mark></li>
+                <li><mark>baseline</mark></li>
+                <li><mark>start</mark></li>
+                <li><mark>end</mark></li>
+                <li><mark>self-start</mark></li>
+                <li><mark>self-end</mark></li>
+                <li><mark>normal</mark></li>
+            </ul>
+            <p>Para sobrescrever o alinhamento de um item específico, utilize a propriedade <mark>align-self</mark>
+                diretamente no elemento filho desejado. Ela aceita os mesmos valores que <mark>align-items</mark>.</p>
+            <p id="font">Informaçôes tiradas do site <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-items" target="_blank">Developer
+                    Mozilla</a>
+            </p>
+        </section>
+
+        <section id="flexflow">
+            <h2>Flex Flow</h2>
+            <p>A propriedade <mark>flex-flow</mark> é uma propriedade shorthand que combina <mark>flex-direction</mark>
+                e <mark>flex-wrap</mark> em uma única declaração. Ela define simultaneamente o eixo principal do
+                container flex e se os itens podem ou não quebrar para múltiplas linhas.</p>
+            <br>
+            <p>A propriedade <mark>flex-wrap</mark> controla se o container flex é de linha única ou multilinha, e a
+                direção do eixo transversal, que determina a direção em que novas linhas são empilhadas. O valor inicial
+                é <mark>nowrap</mark>, que faz com que todos os itens fiquem em uma única linha, o que pode causar
+                overflow caso os itens sejam muito largos.</p>
+            <br>
+            <p>Valores possíveis para <mark>flex-direction</mark>:</p>
+            <ul>
+                <li><mark>row</mark></li>
+                <li><mark>row-reverse</mark></li>
+                <li><mark>column</mark></li>
+                <li><mark>column-reverse</mark></li>
+            </ul>
+            <p>Valores possíveis para <mark>flex-wrap</mark>:</p>
+            <ul>
+                <li><mark>nowrap</mark></li>
+                <li><mark>wrap</mark></li>
+                <li><mark>wrap-reverse</mark></li>
+            </ul>
+            <p>Exemplo de uso da shorthand: <mark>flex-flow: row wrap</mark> define os itens em linha e permite a
+                quebra para novas linhas quando necessário.</p>
+            <p id="font">Informaçôes tiradas do site <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-flow" target="_blank">Developer
+                    Mozilla</a>
+            </p>
+        </section>
+
+        <section id="flex">
+            <h2>Flex</h2>
+            <p>A propriedade <mark>flex</mark> é uma shorthand que define como um item flex cresce ou encolhe para se
+                ajustar ao espaço disponível no container. Ela combina três propriedades: <mark>flex-grow</mark>,
+                <mark>flex-shrink</mark> e <mark>flex-basis</mark>.
+            </p>
+            <br>
+            <p><mark>flex-grow</mark> define o fator de crescimento do item em relação aos demais itens do container.
+                <mark>flex-shrink</mark> define o fator de encolhimento quando não há espaço suficiente.
+                <mark>flex-basis</mark> define o tamanho inicial do item antes de o espaço disponível ser distribuído.
+            </p>
+            <br>
+            <p>Valores comuns da shorthand <mark>flex</mark>:</p>
+            <ul>
+                <li><mark>flex: 1</mark> — o item cresce para preencher o espaço disponível</li>
+                <li><mark>flex: auto</mark> — equivalente a <mark>flex: 1 1 auto</mark></li>
+                <li><mark>flex: none</mark> — equivalente a <mark>flex: 0 0 auto</mark>, item inflexível</li>
+                <li><mark>flex: initial</mark> — equivalente a <mark>flex: 0 1 auto</mark>, valor padrão</li>
+                <li><mark>flex: 2</mark> — o item cresce o dobro em relação a um item com <mark>flex: 1</mark></li>
+            </ul>
+            <p>É recomendado utilizar a shorthand <mark>flex</mark> ao invés das propriedades individuais, pois ela
+                redefine automaticamente as outras sub-propriedades para comportamentos comuns de forma mais previsível.
+            </p>
+            <p id="font">Informaçôes tiradas do site <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex"
+                    target="_blank">Developer Mozilla</a>
+            </p>
+        </section>
     </main>
     <script src="script.js"></script>
 </body>

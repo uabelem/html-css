@@ -9,7 +9,7 @@
 
 body {
     background-color: #bcb8b1;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 header {
@@ -52,6 +52,11 @@ h1 {
     color: #8a817c;
 }
 
+#navmenu li.active {
+    background-color: #f4f3ee;
+    color: #8a817c;
+}
+
 div#topo>span {
     display: none;
     padding: 20px;
@@ -60,7 +65,27 @@ div#topo>span {
     cursor: pointer;
 }
 
-main {
+.creditos{
+    background-color: #554c46;
+    color: #f4f3ee;
+    padding: 5px;
+    text-indent: 18px;
+}
+
+.creditos a{
+    text-decoration: none;
+    color: #bcb8b1;
+}
+
+.creditos a:hover{
+    text-decoration: underline;
+}
+
+.creditos a::after{
+    content: none;
+}
+
+section {
     display: block;
     margin: auto;
     padding: 10px;
@@ -72,16 +97,16 @@ main {
     margin-top: 10px;
 }
 
-main>h2 {
+section>h2 {
     padding: 10px;
     color: #463f3a;
 }
 
-main>p {
+section>p {
     text-indent: 20px;
 }
 
-main ul {
+section ul {
     padding: 20px;
 }
 
@@ -105,15 +130,24 @@ p>span{
     border-radius: 0 0 10px 10px;
 }
 
-#font>a{
-    color: #463f3a;
+
+a{
+    color: #554c46;
 }
 
-#font>a::after{
+a::after{
     content: '🔗';
 }
 
-@media (max-width:530px) {
+#justifycont,
+#justifyitems,
+#alignitems,
+#flexflow,
+#flex {
+    display: none;
+}
+
+@media (max-width:667px) {
 
     nav {
         display: none;
@@ -132,5 +166,9 @@ p>span{
 
     div#topo>span {
         display: inline;
+    }
+
+    .creditos{
+        text-align: center;
     }
 }
