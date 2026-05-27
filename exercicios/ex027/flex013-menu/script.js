@@ -19,54 +19,18 @@ function mudouTamanho() {
     }
 }
 
-function sBasic() {
-    basic.style.display = 'block'
-    justifycont.style.display = 'none'
-    justifyitems.style.display = 'none'
-    alignitems.style.display = 'none'
-    flexflow.style.display = 'none'
-    flex.style.display = 'none'
-}
-function sJustifycont() {
-    basic.style.display = 'none'
-    justifycont.style.display = 'block'
-    justifyitems.style.display = 'none'
-    alignitems.style.display = 'none'
-    flexflow.style.display = 'none'
-    flex.style.display = 'none'
-}
-function sJustifyitems() {
-    basic.style.display = 'none'
-    justifycont.style.display = 'none'
-    justifyitems.style.display = 'block'
-    alignitems.style.display = 'none'
-    flexflow.style.display = 'none'
-    flex.style.display = 'none'
-}
-function sAlignitems() {
-    basic.style.display = 'none'
-    justifycont.style.display = 'none'
-    justifyitems.style.display = 'none'
-    alignitems.style.display = 'block'
-    flexflow.style.display = 'none'
-    flex.style.display = 'none'
-}
-function sFlexflow() {
-    basic.style.display = 'none'
-    justifycont.style.display = 'none'
-    justifyitems.style.display = 'none'
-    alignitems.style.display = 'none'
-    flexflow.style.display = 'block'
-    flex.style.display = 'none'
-}
-function sFlex() {
-    basic.style.display = 'none'
-    justifycont.style.display = 'none'
-    justifyitems.style.display = 'none'
-    alignitems.style.display = 'none'
-    flexflow.style.display = 'none'
-    flex.style.display = 'block'
-}
+const sections = ['basic', 'justifycont', 'justifyitems', 'alignitems', 'flexflow', 'flex']
+
+const show = (active) => sections.forEach(id =>
+    window[id].style.display = id === active ? 'block' : 'none'
+)
+
+const sBasic = () => show('basic')
+const sJustifycont = () => show('justifycont')
+const sJustifyitems = () => show('justifyitems')
+const sAlignitems = () => show('alignitems')
+const sFlexflow = () => show('flexflow')
+const sFlex = () => show('flex')
 
 function setActive(el) {
     document.querySelectorAll('#navmenu li').forEach(li => li.classList.remove('active'));
