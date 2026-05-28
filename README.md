@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🌐 Curso HTML5 e CSS3 — Gustavo Guanabara
+# 🌐 Curso HTML5 e CSS3
 
 **por Gabriel Belém Lima**
 
