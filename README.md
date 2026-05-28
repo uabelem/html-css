@@ -203,11 +203,3 @@ Estudante de desenvolvimento web · Curso HTML5 e CSS3 com Gustavo Guanabara
 [![GitHub](https://img.shields.io/badge/GitHub-uabelem-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/uabelem)
 
 </div>
-
----
-
-<div align="center">
-
-*Feito com 💙 estudando muito HTML e CSS*
-
-</div>
