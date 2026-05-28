@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GridLayout na prática</title>
+    <style>
+        div.container {
+            border: 3px solid blue;
+            display: grid;
+            grid-template: 100px 100px 100px / auto auto auto;/* grid-template-rows / grid-template-columns */
+            gap: 5px;
+            place-items: center center;/* align-items / justify-items */
+            place-content: stretch stretch;/* align-content / justify-content */
+            grid-auto-rows: 100px;/* a cada nova linha/coluna ela tera certo tamanho*/
+            grid-auto-columns: auto;
+            grid-auto-flow: column;/*Inca como os itens iraão se organizar*/
+        }
+
+        div.item {
+            border: 3px solid red;
+            padding: 5px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item" id="itema">A</div>
+        <div class="item" id="itemb">B</div>
+        <div class="item" id="itemc">C</div>
+        <div class="item" id="itemd">D</div>
+        <div class="item" id="iteme">E</div>
+        <div class="item" id="itemf">F</div>
+        <div class="item" id="itemg">G</div>
+        <div class="item" id="itemh">H</div>
+        <div class="item" id="itemi">I</div>
+        <div class="item" id="itemi">I</div>
+    </div>
+</body>
+
+</html>
