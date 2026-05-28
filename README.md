@@ -1,18 +1,10 @@
-<div align="center">
-
-# 🌐 Curso HTML5 e CSS3 — Gustavo Guanabara
+# 🌐 Curso HTML5 e CSS3
 
 **por Gabriel Belém Lima**
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-
-> Repositório de exercícios e desafios do curso de **HTML5 e CSS3** do [Curso em Vídeo](https://www.cursoemvideo.com), ministrado pelo professor **Gustavo Guanabara**.
+Repositório de exercícios e desafios do curso de **HTML5 e CSS3** do [Curso em Vídeo](https://www.cursoemvideo.com), ministrado pelo professor **Gustavo Guanabara**.
 
 🔗 **GitHub Pages:** [uabelem.github.io/html-css](https://uabelem.github.io/html-css)
-
-</div>
 
 ---
 
@@ -81,7 +73,7 @@ html-css/
 | **EX004** | Imagens — `imagens/css-200.png` e `imagens/html-200.png` | [🔗 Abrir](https://uabelem.github.io/html-css/exercicios/modulo1/ex004/index.html) |
 | **EX005** | Favicon com `ballicon.ico` | [🔗 Abrir](https://uabelem.github.io/html-css/exercicios/modulo1/ex005/index.html) |
 | **EX006** | Favicon com `ptfavicon.ico` | [🔗 Abrir](https://uabelem.github.io/html-css/exercicios/modulo1/ex006/index.html) |
-| **EX007** | Duas páginas HTML — `html4.html` e `html5.html` | [🔗 html4](https://uabelem.github.io/html-css/exercicios/modulo1/ex007/html4.html) · [🔗 html5](https://uabelem.github.io/html-css/exercicios/modulo1/ex007/html5.html) |
+| **EX007** | Duas páginas — `html4.html` e `html5.html` | [🔗 html4](https://uabelem.github.io/html-css/exercicios/modulo1/ex007/html4.html) · [🔗 html5](https://uabelem.github.io/html-css/exercicios/modulo1/ex007/html5.html) |
 | **EX008** | Estrutura HTML | [🔗 Abrir](https://uabelem.github.io/html-css/exercicios/modulo1/ex008/index.html) |
 | **EX008.2** | Variação do exercício 008 | [🔗 Abrir](https://uabelem.github.io/html-css/exercicios/modulo1/ex008.2/index.html) |
 | **EX009** | Links e navegação | [🔗 Abrir](https://uabelem.github.io/html-css/exercicios/modulo1/ex009/index.html) |
@@ -100,11 +92,11 @@ html-css/
 
 | Exercício | Conteúdo | Link |
 |-----------|----------|------|
-| **EX016** | Cores em CSS | [🔗 cor01](https://uabelem.github.io/html-css/exercicios/modulo2/ex016/cor01.html) · [🔗 cor02](https://uabelem.github.io/html-css/exercicios/modulo2/ex016/cor02.html) · [🔗 cor03](https://uabelem.github.io/html-css/exercicios/modulo2/ex016/cor03.html) |
-| **EX017** | Fontes | [🔗 font01](https://uabelem.github.io/html-css/exercicios/modulo2/ex017/font01.html) · [🔗 font02](https://uabelem.github.io/html-css/exercicios/modulo2/ex017/font02.html) |
+| **EX016** | Cores em CSS — `cor01.html`, `cor02.html`, `cor03.html` | [🔗 cor01](https://uabelem.github.io/html-css/exercicios/modulo2/ex016/cor01.html) · [🔗 cor02](https://uabelem.github.io/html-css/exercicios/modulo2/ex016/cor02.html) · [🔗 cor03](https://uabelem.github.io/html-css/exercicios/modulo2/ex016/cor03.html) |
+| **EX017** | Fontes — `font01.html` e `font02.html` | [🔗 font01](https://uabelem.github.io/html-css/exercicios/modulo2/ex017/font01.html) · [🔗 font02](https://uabelem.github.io/html-css/exercicios/modulo2/ex017/font02.html) |
 | **EX018** | Fontes customizadas — Batuphat Script | [🔗 fonte01](https://uabelem.github.io/html-css/exercicios/modulo2/ex018/fonte01.html) · [🔗 fonte02](https://uabelem.github.io/html-css/exercicios/modulo2/ex018/fonte02.html) |
 | **EX019** | Seletores CSS — `seletor01.html` + `style.css` | [🔗 Abrir](https://uabelem.github.io/html-css/exercicios/modulo2/ex019/seletor01.html) |
-| **EX020** | Hover e links | [🔗 hover](https://uabelem.github.io/html-css/exercicios/modulo2/ex020/hover.html) · [🔗 links](https://uabelem.github.io/html-css/exercicios/modulo2/ex020/links.html) |
+| **EX020** | Hover e links — `hover.html` e `links.html` | [🔗 hover](https://uabelem.github.io/html-css/exercicios/modulo2/ex020/hover.html) · [🔗 links](https://uabelem.github.io/html-css/exercicios/modulo2/ex020/links.html) |
 
 ---
 
@@ -192,22 +184,13 @@ html-css/
 | **grid003** | [🔗 Abrir](https://uabelem.github.io/html-css/exercicios/modulo5/ex028/grid003/index.html) |
 
 ---
-<div align="center">
 
 ## 👨‍💻 Autor
 
 **Gabriel Belém Lima**
 
-Estudante de desenvolvimento web · Curso HTML5 e CSS3 com Gustavo Guanabara
+Estudante de desenvolvimento web — Curso HTML5 e CSS3 com Gustavo Guanabara.
 
-[![GitHub](https://img.shields.io/badge/GitHub-uabelem-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/uabelem)
-
-</div>
+GitHub: [github.com/uabelem](https://github.com/uabelem)
 
 ---
-
-<div align="center">
-
-*Feito com 💙 estudando muito HTML e CSS*
-
-</div>
