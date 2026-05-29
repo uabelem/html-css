@@ -4,52 +4,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GridLayout na prática</title>
+    <title>Treino - Grid Layout</title>
     <style>
-        div.container {
-            border: 3px solid blue;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
             display: grid;
-            grid-template: repeat(3, 1fr) / repeat(3, 1fr);
-            /* repeat = repete  3 vezes  uma fração(1fr) do conteiner*/
-            gap: 5px;
-            place-items: stretch stretch;
-            place-content: stretch stretch;
-            grid-auto-rows: 100px;
-            grid-auto-columns: auto;
-            grid-auto-flow: column;
-            /*Inca como os itens iraão se organizar*/
+            height: 100vh;
+            grid-template-rows: repeat(6, 1fr);
+            grid-template-columns: repeat(5, 1fr);
         }
 
-        div.item {
-            border: 3px solid red;
-            padding: 5px;
-            text-align: center;
+        header {
+            grid-area: 1 / 1 / 2 / 6;
+            background-color: darkblue;
         }
 
-        #itema{
-            grid-row-start: 1;
-            grid-row-end: -2;
-            grid-column-start: 1;
-            grid-column-end: 3;
+        nav {
+            grid-area: 2 / 1 / 6 / 2;
+            background-color: darkmagenta;
         }
 
-        #itemg{
-            grid-row-start: 1;
-            grid-row-end: -1;
+        main {
+            grid-area: 2 / 2 / 6 / 5;
+            background-color: darkred;
+        }
+
+        aside {
+            grid-area: 2 / 5 / 6 / 6;
+            background-color: darkgreen;
+        }
+
+        footer {
+            grid-area: 6 / 1 / 7 / 6;
+            background-color: darkgoldenrod;
+        }
+
+        @media (max-width:768px) {
+
+            body {
+                grid-template-rows: repeat(12, 1fr);
+                grid-template-columns: repeat(5, 1fr);
+            }
+
+            nav {
+                grid-area: 2 / 1 / 3 / 6;
+            }
+
+            main {
+                grid-area: 3 / 1 / 9 / 6;
+            }
+
+            aside {
+                grid-area: 9 / 1 / 12 / 6;
+            }
+
+            footer {
+                grid-area: 12 / 1 / 13 / 6;
+            }
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="item" id="itema">A</div>
-        <div class="item" id="itemb">B</div>
-        <div class="item" id="itemc">C</div>
-        <div class="item" id="itemd">D</div>
-        <div class="item" id="iteme">E</div>
-        <div class="item" id="itemf">F</div>
-        <div class="item" id="itemg">G</div>
-    </div>
+
+    <header>header</header>
+    <nav>nav</nav>
+    <main>main</main>
+    <aside>aside</aside>
+    <footer>footer</footer>
+
 </body>
 
 </html>
